@@ -1,0 +1,35 @@
+/* 타이틀 */
+.discovery-title-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.discovery-title-area > h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+}
+.discovery-title-area > span {
+  margin: 10px;
+}
+.discovery-title-area > h3 {
+  font-weight: 500;
+  font-size: 16;
+  line-height: 115%;
+}
+.discovery-title-area > h3,
+.discovery-title-area > span {
+  color: var(--color-gray-500);
+}
+/* 아이템 */
+.discovery-itemlist {
+  display: flex;
+}
+.discovery-itemlist,
+.discovery-item {
+  border: 1px solid var(--color-gray-500);
+}
+.discovery-item {
+  background-color: var(--color-white);
+  width: 500px;
+}
