@@ -32,9 +32,6 @@
 .discovery-item {
   border: 1px solid var(--color-gray-500);
 }
-.discovery-item img {
-  /* position: absolute; */
-}
 .discovery-item {
   position: relative;
   background-color: var(--color-white);
@@ -46,9 +43,10 @@
   height: 42px;
   left: 20px;
   top: 248px;
-  background: gray url('/stylesheets/assets/images/logo/angle-right.png');
+  background: gray url('/stylesheets/assets/images/logo/angle-right.png')
+    no-repeat;
   z-index: 9;
-  transition-property: width, color;
+  transition-property: width, color, background;
   transition-duration: 0.3s;
 }
 .discovery-item:hover {
