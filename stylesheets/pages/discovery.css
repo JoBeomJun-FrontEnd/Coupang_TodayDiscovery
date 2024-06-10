@@ -48,7 +48,7 @@
   top: 248px;
   background: gray url('/stylesheets/assets/images/logo/angle-right.png');
   z-index: 9;
-  transition-property: width, color, background;
+  transition-property: width, color;
   transition-duration: 0.3s;
 }
 .discovery-item:hover {
