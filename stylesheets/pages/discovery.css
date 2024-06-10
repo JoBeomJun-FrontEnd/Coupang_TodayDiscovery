@@ -23,13 +23,48 @@
 }
 /* 아이템 */
 .discovery-itemlist {
+  width: 985px;
   display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
 }
 .discovery-itemlist,
 .discovery-item {
   border: 1px solid var(--color-gray-500);
 }
+.discovery-item img {
+  /* position: absolute; */
+}
 .discovery-item {
+  position: relative;
   background-color: var(--color-white);
-  width: 500px;
+  margin: 5px 8px;
+}
+.discovery-item-btn {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 20px;
+  top: 248px;
+  background: gray url('/stylesheets/assets/images/logo/angle-right.png');
+  z-index: 9;
+  transition-property: width, color, background;
+  transition-duration: 0.3s;
+}
+.discovery-item:hover {
+  border: 1px solid var(--color-blue-600);
+}
+.discovery-item:hover .discovery-item-btn {
+  width: 112px;
+  background: var(--color-blue-600)
+    url('/stylesheets/assets/images/logo/angle-right.png') no-repeat;
+  background-position: right;
+}
+.discovery-item:hover .discovery-item-btn::before,
+.discovery-item:focus .discovery-item-btn::before {
+  content: '구매하기';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: var(--color-white);
 }
