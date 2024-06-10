@@ -1,1 +1,0 @@
-# Coupang_TodayDiscovery
