@@ -43,8 +43,7 @@
   height: 42px;
   left: 20px;
   top: 248px;
-  background: gray url('/stylesheets/assets/images/logo/angle-right.png')
-    no-repeat;
+  background: gray url('../assets/images/logo/angle-right.png') no-repeat;
   z-index: 9;
   transition-property: width, color, background;
   transition-duration: 0.3s;
@@ -54,8 +53,8 @@
 }
 .discovery-item:hover .discovery-item-btn {
   width: 112px;
-  background: var(--color-blue-600)
-    url('/stylesheets/assets/images/logo/angle-right.png') no-repeat;
+  background: var(--color-blue-600) url('../assets/images/logo/angle-right.png')
+    no-repeat;
   background-position: right;
 }
 .discovery-item:hover .discovery-item-btn::before,
