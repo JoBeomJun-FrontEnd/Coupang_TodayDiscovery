@@ -23,10 +23,11 @@
 }
 /* 아이템 */
 .discovery-itemlist {
-  width: 960px;
+  width: 974px;
+  height: 930px;
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 0px;
+  padding: 3px 0px 13px 4px;
 }
 .discovery-itemlist,
 .discovery-item {
@@ -35,8 +36,24 @@
 .discovery-item {
   position: relative;
   background-color: var(--color-white);
-  margin: 5px 5px;
+  height: 297px;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
+.discovery-item:nth-child(1),
+.discovery-item:nth-child(2),
+.discovery-item:nth-child(7) {
+  margin-left: 12px;
+}
+.discovery-item:nth-child(3),
+.discovery-item:nth-child(4),
+.discovery-item:nth-child(5),
+.discovery-item:nth-child(6),
+.discovery-item:nth-child(8),
+.discovery-item:nth-child(9) {
+  margin-left: 12px;
+}
+
 .discovery-item-btn {
   position: absolute;
   width: 42px;
@@ -44,16 +61,13 @@
   left: 15px;
   top: 248px;
   background: gray url('../assets/images/logo/angle-right.png') no-repeat;
-  z-index: 9;
-  transition-property: width, color, background;
-  transition-duration: 0.3s;
 }
 .discovery-item:hover {
-  border: 1px solid var(--color-blue-600);
+  border: 1px solid var(--color-blue-500);
 }
 .discovery-item:hover .discovery-item-btn {
   width: 112px;
-  background: var(--color-blue-600) url('../assets/images/logo/angle-right.png')
+  background: var(--color-blue-500) url('../assets/images/logo/angle-right.png')
     no-repeat;
   background-position: right;
 }
