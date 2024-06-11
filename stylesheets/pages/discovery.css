@@ -23,10 +23,10 @@
 }
 /* 아이템 */
 .discovery-itemlist {
-  width: 985px;
+  width: 960px;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 .discovery-itemlist,
 .discovery-item {
@@ -35,13 +35,13 @@
 .discovery-item {
   position: relative;
   background-color: var(--color-white);
-  margin: 5px auto;
+  margin: 5px 5px;
 }
 .discovery-item-btn {
   position: absolute;
   width: 42px;
   height: 42px;
-  left: 20px;
+  left: 15px;
   top: 248px;
   background: gray url('../assets/images/logo/angle-right.png') no-repeat;
   z-index: 9;
